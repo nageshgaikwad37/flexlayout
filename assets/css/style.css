@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+    line-height: 1.5;
+    font-family: 'Asap', sans-serif;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+    font-family: 'Asap', sans-serif;
+
+}
+.img-fluid, .gallary-img img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: auto;
+}
+
+.section-header{
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.header{
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-description{
+    text-align: center;
+    color: #F6D200;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.na{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: column;
+}
+.pa{
+    flex-grow: 1;
+}
+.pa a:link, .pa a:visited{
+     text-decoration: none;
+     padding: 10px 20px;
+     display: block;
+     font-size: 24px;
+     background-color: yellow;
+     text-transform: capitalize;
+     transition: all .3s ease-in-out;
+}
+
+
+.pa a:hover, .pa a:active, .pa a:focus{
+    background-color: black;
+    color: #F6D200;
+}
+
+.main-content-area{
+    padding: 20px;
+}
+
+.post{
+    margin-bottom: 20px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-content{
+    padding: 0 15px 10px 15px;
+}
+
+.post-content h2{
+    background-color: #F6D200;
+    padding: 30px;
+    margin: 0 -15px 0 -15px;
+    text-align: center;
+    height: 115px;
+}
+
+.post-content p{
+    padding: 20px 10px 0 10px;
+}
+
+.post-half{
+    background-color: white;
+}
+
+
+.post-one-third{
+    background-color: white;
+}
+
+.post-full{
+    background-color: white;
+}
+
+/* ===============download section ======================*/
+.download-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.download-content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.download-content > .download-link{
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-link i{
+    font-size: 48px;
+}
+
+.download-cast, .download-gener{
+    display: flex;
+}
+
+.download-cast img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.download-gener{
+    margin-bottom: 10px;
+}
+.download-cast h4, .download-gener h4{
+    flex-basis: 20%;
+}
+
+.download-rating{
+    background-color: #F6D200;
+    padding: 16px 32px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.download-rating span:first-child{
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: -11px;
+}
+
+/* ===============section watch ======================*/
+
+.watch-card{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.watch-content{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info{
+    font-weight: bold;
+}
+
+.movie-info span {
+    margin-right: 20px;
+}
+
+.movie-info a{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.watch-content h3{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.mb-4{
+    margin-bottom: 35px;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+
+.mt-2{
+    margin: 10px 0;
+}
+
+/* ===============section gallary ======================*/
+.gallary-imgs{
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -8px;
+}
+
+.gallary-img{
+    height: 250px;
+    flex-grow: 1;
+    margin: 0 0 8px 8px;
+ }
+.gallary-img img{
+    height: 250px;
+}
+.gallary-img:nth-child(4n + 1){
+    flex-basis: 250px;
+}
+
+.gallary-img:nth-child(4n + 2){
+    flex-basis: 325px;
+}
+
+.gallary-img:nth-child(4n + 3){
+    flex-basis: 175px;
+}
+
+.gallary-img:nth-child(4n + 4){
+    flex-basis: 380px;
+}
+
+.sidebar-right{
+    background-color: gainsboro;
+    padding: 20px;
+}
+
+.widget{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.widget-content{
+   padding: 10px 20px;
+}
+
+.siderbar-menu{
+    margin-top: 10px;
+}
+.siderbar-menu ul{
+    list-style: none;
+}
+
+.siderbar-menu ul a{
+    display: block;
+    padding: 1px 15px;
+    color: #000;
+    font-weight: bold;
+}
+/* ===============section footer ======================*/
+.footer{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* ===============Media querry ======================*/
+
+
+@media all and (min-width: 768px){
+    .download-content{
+        flex-direction: row;
+    }
+    .download-link, .download-rating{
+        flex-grow: 1;
+    }
+    .download-info{
+        flex-grow: 2;
+        margin: 20px;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .content-area{
+        display: flex;
+    }
+    .sidebar-right{
+        flex: 0 0 400px;
+    }
+
+    .na{
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 64px;
+    }
+    .post-half{
+        width: 49%;
+    }
+    .post-one-third{
+        width: 32%;
+    }
+    .watch-card{
+        display: flex;
+        flex-direction: row;
+    }
+    .right-img{
+        order: 2;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width:1200px) {
+    .sidebar-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .widget{
+       flex-basis: 49%; 
+    }
+}
